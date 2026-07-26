@@ -11,13 +11,24 @@
       },
       "permissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.CAMERA"
-      ]
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.itoshimyz.tiketkonser"
     },
     "plugins": [
-      ["expo-image-picker", {
-        "photosPermission": "Izinkan akses galeri untuk upload bukti transfer"
-      }]
-    ]
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Izinkan akses galeri untuk upload bukti transfer"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d1a5391f-872e-4dc4-9bae-62c3283a8f65"
+      }
+    }
   }
 }
